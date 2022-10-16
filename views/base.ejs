@@ -1,0 +1,31 @@
+<%- include('header.ejs') %> 
+    
+
+
+
+<div class="text-center center-div" id="login">
+    <div class="container border w-25 py-5">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">Login System</h2>
+            <span>Existing user login</span>
+        </div>
+        <form action="/route/login" method="post">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="email" name="email">
+                <small class="text-muted form-text text-start">Registered email</small>
+                <input type="password" class="form-control" placeholder="password" name="password" >
+                <small class="text-muted text-left form-text">your Password</small>
+                
+            </div>
+            <button type="submit" class="btn btn-success rounded-pill mt-3">Log-in</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+    <%- include('footer.ejs') %> 
